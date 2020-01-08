@@ -1,9 +1,9 @@
 package com.example.demo.apis;
 
 
-import com.example.demo.category.player.Player;
-import com.example.demo.category.player.NFLPlayerFactory;
-import com.example.demo.category.player.Position;
+import com.example.demo.people.player.Player;
+import com.example.demo.people.player.NFLPlayerFactory;
+import com.example.demo.people.player.Position;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

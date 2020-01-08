@@ -1,9 +1,9 @@
-package com.example.demo.category.player;
+package com.example.demo.people.player;
 
-import com.example.demo.category.attribute.Attribute;
-import com.example.demo.category.attribute.PlayerAttributes;
-import com.example.demo.category.stats.NonPlayingStats;
-import com.example.demo.category.stats.PlayingStats;
+import com.example.demo.people.attribute.Attribute;
+import com.example.demo.people.attribute.PlayerAttributes;
+import com.example.demo.people.stats.NonPlayingStats;
+import com.example.demo.people.stats.PlayingStats;
 
 import java.util.Map;
 import java.util.UUID;
@@ -45,6 +45,7 @@ public class Player {
     public PlayerGeneralInfo getPlayerGeneralInfo() { return playerGeneralInfo;}
     public PlayingStats getPlayingStats(){return playingStats;}
     public NonPlayingStats getNonPlayingStats(){return nonPlayingStats;}
+    public Position getPlayerPosition(){ return playerGeneralInfo.getPosition();}
 
     /* Setters */
     public void setAllPlayerAttributes(Map<String, Attribute> attributes){playerAttributes.setAllAttributes(attributes);}

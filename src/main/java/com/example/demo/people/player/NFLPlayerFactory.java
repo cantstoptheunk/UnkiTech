@@ -1,13 +1,13 @@
-package com.example.demo.category.player;
+package com.example.demo.people.player;
 
-import com.example.demo.category.attribute.Attribute;
-import com.example.demo.category.attribute.PlayerAttributes;
+import com.example.demo.people.attribute.Attribute;
+import com.example.demo.people.attribute.PlayerAttributes;
 import com.example.demo.distributions.CustomNormalDistribution;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.example.demo.category.attribute.AttributeConstants.*;
+import static com.example.demo.people.attribute.AttributeConstants.*;
 
 public class NFLPlayerFactory extends AbstractPlayerFactory {
 

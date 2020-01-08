@@ -1,4 +1,4 @@
-package com.example.demo.category.stats;
+package com.example.demo.people.stats;
 
 public class StatConstants {
     /* QB Constants */

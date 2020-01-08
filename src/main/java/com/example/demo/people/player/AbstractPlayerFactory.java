@@ -1,4 +1,4 @@
-package com.example.demo.category.player;
+package com.example.demo.people.player;
 
 import java.io.BufferedReader;
 import java.io.File;

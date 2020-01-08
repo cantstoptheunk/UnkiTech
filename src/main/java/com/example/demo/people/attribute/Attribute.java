@@ -1,9 +1,6 @@
-package com.example.demo.category.attribute;
+package com.example.demo.people.attribute;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.example.demo.category.Category;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.example.demo.people.Category;
 
 public class Attribute extends Category {
 

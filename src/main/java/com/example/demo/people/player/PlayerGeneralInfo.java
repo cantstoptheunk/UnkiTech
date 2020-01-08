@@ -1,4 +1,4 @@
-package com.example.demo.category.player;
+package com.example.demo.people.player;
 
 public class PlayerGeneralInfo {
 

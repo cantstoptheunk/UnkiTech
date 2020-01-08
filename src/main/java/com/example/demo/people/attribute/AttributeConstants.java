@@ -1,4 +1,4 @@
-package com.example.demo.category.attribute;
+package com.example.demo.people.attribute;
 
 public class AttributeConstants {
 
@@ -18,5 +18,9 @@ public class AttributeConstants {
     public static String TECHNIQUE_DESC = "";
     public static String BODY_CONTROL = "body-control";
     public static String BODY_CONTROL_DESC = "";
+
+    public static String OVERALL = "";
+    public static String OVERALL_DESC = "";
+
 
 }

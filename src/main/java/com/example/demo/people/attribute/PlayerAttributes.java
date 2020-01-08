@@ -1,9 +1,9 @@
-package com.example.demo.category.attribute;
+package com.example.demo.people.attribute;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.example.demo.category.attribute.AttributeConstants.*;
+import static com.example.demo.people.attribute.AttributeConstants.*;
 
 public class PlayerAttributes {
 
