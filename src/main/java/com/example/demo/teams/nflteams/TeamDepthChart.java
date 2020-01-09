@@ -16,6 +16,10 @@ public class TeamDepthChart {
         fullDepthChart = setupDepthChart(roster);
     }
 
+    public void reorderDepthChart(List<Player> roster){
+        fullDepthChart = setupDepthChart(roster);
+    }
+
     private Map<Position, List<Player>> setupDepthChart(List<Player> roster){
         Map<Position, List<Player>> completeDepthChart = new HashMap<>();
 

@@ -1,15 +1,18 @@
 package com.example.demo.people.attribute;
 
+import com.example.demo.generic.Category;
+
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.demo.generic.CategoryType.TYPE_ATTRIBUTE;
 import static com.example.demo.people.attribute.AttributeConstants.*;
 
 public class PlayerAttributes {
 
-    private Map<String, Attribute> attributes;
+    private Map<String, Category> attributes;
 
-    public PlayerAttributes(Map<String, Attribute> attributes){
+    public PlayerAttributes(Map<String, Category> attributes){
         this.attributes = attributes;
     }
 
@@ -17,29 +20,29 @@ public class PlayerAttributes {
         attributes = new HashMap<>();
 
         /* Physical Attributes */
-        attributes.put(SPEED, new Attribute(SPEED, SPEED_DESC));
-        attributes.put(AGILITY, new Attribute(AGILITY, AGILITY_DESC));
-        attributes.put(ACCELERATION, new Attribute(ACCELERATION, ACCELERATION_DESC));
+        attributes.put(SPEED, new Category(SPEED, TYPE_ATTRIBUTE, SPEED_DESC));
+        attributes.put(AGILITY, new Category(AGILITY, TYPE_ATTRIBUTE, AGILITY_DESC));
+        attributes.put(ACCELERATION, new Category(ACCELERATION, TYPE_ATTRIBUTE, ACCELERATION_DESC));
 
         /* Mental Attributes */
-        attributes.put(SMARTS, new Attribute(SMARTS, SMARTS_DESC));
-        attributes.put(DETERMINATION, new Attribute(DETERMINATION, DETERMINATION_DESC));
+        attributes.put(SMARTS, new Category(SMARTS, TYPE_ATTRIBUTE, SMARTS_DESC));
+        attributes.put(DETERMINATION, new Category(DETERMINATION, TYPE_ATTRIBUTE, DETERMINATION_DESC));
 
         /* Technical Attributes */
 
     }
 
     /* Getters */
-    public Map<String, Attribute> getAllAttributes(){
+    public Map<String, Category> getAllAttributes(){
         return attributes;
     }
-    public Attribute getAttribute(String name){
+    public Category getAttribute(String name){
         return attributes.get(name);
     }
 
     /* Setters */
-    public void setAllAttributes(Map<String, Attribute> attributes){ this.attributes = attributes; }
-    public void setAttribute(String name, Attribute attribute){ attributes.replace(name, attribute); }
+    public void setAllAttributes(Map<String, Category> attributes){ this.attributes = attributes; }
+    public void setAttribute(String name, Category attribute){ attributes.replace(name, attribute); }
 
 
 

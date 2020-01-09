@@ -1,6 +1,6 @@
 package com.example.demo.people.player;
 
-import com.example.demo.people.attribute.Attribute;
+import com.example.demo.generic.Category;
 import com.example.demo.people.attribute.PlayerAttributes;
 import com.example.demo.people.stats.NonPlayingStats;
 import com.example.demo.people.stats.PlayingStats;
@@ -35,20 +35,28 @@ public class Player {
     public String getId(){
         return UUID.toString();
     }
-    public PlayerAttributes getPlayerAttributes() {return playerAttributes;}
-    public Map<String, Attribute> getAllPlayerAttributes(){
-        return playerAttributes.getAllAttributes();
-    }
-    public Attribute getAttribute(String name){
-        return playerAttributes.getAttribute(name);
-    }
-    public PlayerGeneralInfo getPlayerGeneralInfo() { return playerGeneralInfo;}
-    public PlayingStats getPlayingStats(){return playingStats;}
-    public NonPlayingStats getNonPlayingStats(){return nonPlayingStats;}
     public Position getPlayerPosition(){ return playerGeneralInfo.getPosition();}
 
+    public PlayerAttributes getPlayerAttributes() {return playerAttributes;}
+    public Map<String, Category> getAllPlayerAttributes(){
+        return playerAttributes.getAllAttributes();
+    }
+    public Category getAttribute(String name){
+        return playerAttributes.getAttribute(name);
+    }
+
+    public PlayerGeneralInfo getPlayerGeneralInfo() { return playerGeneralInfo;}
+
+    public PlayingStats getPlayingStats(){return playingStats;}
+    public Category getPlayingStat(String name) {
+        return playingStats.getPlayingStat(name);
+    }
+
+    public NonPlayingStats getNonPlayingStats(){return nonPlayingStats;}
+    public Category getNonPlayingStat(String name){return nonPlayingStats.getNonPlayingStat(name);}
+
     /* Setters */
-    public void setAllPlayerAttributes(Map<String, Attribute> attributes){playerAttributes.setAllAttributes(attributes);}
+    public void setAllPlayerAttributes(Map<String, Category> attributes){playerAttributes.setAllAttributes(attributes);}
     public void setPlayingStats(PlayingStats stats){playingStats = stats;}
     public void setNonPlayingStats(NonPlayingStats stats){ nonPlayingStats = stats;}
 }

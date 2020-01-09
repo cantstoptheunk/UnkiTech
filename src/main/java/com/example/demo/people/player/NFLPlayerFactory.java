@@ -1,12 +1,13 @@
 package com.example.demo.people.player;
 
-import com.example.demo.people.attribute.Attribute;
+import com.example.demo.generic.Category;
 import com.example.demo.people.attribute.PlayerAttributes;
 import com.example.demo.distributions.CustomNormalDistribution;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.demo.generic.CategoryType.TYPE_ATTRIBUTE;
 import static com.example.demo.people.attribute.AttributeConstants.*;
 
 public class NFLPlayerFactory extends AbstractPlayerFactory {
@@ -34,10 +35,10 @@ public class NFLPlayerFactory extends AbstractPlayerFactory {
     }
 
     /* POSITION ATTRIBUTE GENERATORS */
-    private static Map<String, Attribute> generateQBAttributes(){
-        Map<String, Attribute> attributes = new HashMap<>();
-        attributes.put(SPEED, new Attribute(SPEED, SPEED_DESC, CustomNormalDistribution.ND_DEFAULT_AVG_SD.sample()));
-        attributes.put(ACCELERATION, new Attribute(ACCELERATION, ACCELERATION_DESC, CustomNormalDistribution.ND_DEFAULT_AVG_SD.sample()));
+    private static Map<String, Category> generateQBAttributes(){
+        Map<String, Category> attributes = new HashMap<>();
+        attributes.put(SPEED, new Category(SPEED, TYPE_ATTRIBUTE, SPEED_DESC, CustomNormalDistribution.ND_DEFAULT_AVG_SD.sample()));
+        attributes.put(ACCELERATION, new Category(ACCELERATION, TYPE_ATTRIBUTE, ACCELERATION_DESC, CustomNormalDistribution.ND_DEFAULT_AVG_SD.sample()));
         return attributes;
     }
 
