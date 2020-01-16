@@ -19,7 +19,7 @@ public class AttributeConstants {
     public static String BODY_CONTROL = "body-control";
     public static String BODY_CONTROL_DESC = "";
 
-    public static String OVERALL = "";
+    public static String OVERALL = "overall";
     public static String OVERALL_DESC = "";
 
 

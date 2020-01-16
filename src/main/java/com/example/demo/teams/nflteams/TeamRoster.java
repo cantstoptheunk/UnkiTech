@@ -2,6 +2,7 @@ package com.example.demo.teams.nflteams;
 
 import com.example.demo.generic.CategoryType;
 import com.example.demo.people.player.Player;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,11 +25,19 @@ public class TeamRoster {
     }
 
     /* Setters */
+
+    public void setRoster(List<Player> roster) {
+        this.roster = roster;
+    }
     public void setDepthChart(TeamDepthChart depthChart) {
         this.depthChart = depthChart;
     }
 
     /* Getters */
+
+    public List<Player> getRoster() {
+        return roster;
+    }
     public TeamDepthChart getDepthChart() {
         return depthChart;
     }

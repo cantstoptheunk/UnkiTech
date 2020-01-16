@@ -19,6 +19,7 @@ public class NFLTeamFactory {
                 NFLPlayerFactory.generatePlayer(Position.QB)
         );
 
+        System.out.println(roster);
         return new TeamRoster(roster);
     }
 

@@ -39,6 +39,7 @@ public class NFLPlayerFactory extends AbstractPlayerFactory {
         Map<String, Category> attributes = new HashMap<>();
         attributes.put(SPEED, new Category(SPEED, TYPE_ATTRIBUTE, SPEED_DESC, CustomNormalDistribution.ND_DEFAULT_AVG_SD.sample()));
         attributes.put(ACCELERATION, new Category(ACCELERATION, TYPE_ATTRIBUTE, ACCELERATION_DESC, CustomNormalDistribution.ND_DEFAULT_AVG_SD.sample()));
+        attributes.put(OVERALL, new Category(OVERALL, TYPE_ATTRIBUTE, OVERALL_DESC, attributes.get(SPEED).getValue()+attributes.get(ACCELERATION).getValue()));
         return attributes;
     }
 

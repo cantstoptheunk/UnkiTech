@@ -19,6 +19,8 @@ public class PlayerAttributes {
     public PlayerAttributes() {
         attributes = new HashMap<>();
 
+        attributes.put(OVERALL, new Category(OVERALL, TYPE_ATTRIBUTE, OVERALL_DESC));
+
         /* Physical Attributes */
         attributes.put(SPEED, new Category(SPEED, TYPE_ATTRIBUTE, SPEED_DESC));
         attributes.put(AGILITY, new Category(AGILITY, TYPE_ATTRIBUTE, AGILITY_DESC));

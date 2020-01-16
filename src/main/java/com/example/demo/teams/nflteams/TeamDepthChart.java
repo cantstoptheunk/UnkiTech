@@ -3,13 +3,15 @@ package com.example.demo.teams.nflteams;
 import com.example.demo.people.player.Player;
 import com.example.demo.people.player.Position;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import static com.example.demo.people.attribute.AttributeConstants.OVERALL;
 
-public class TeamDepthChart {
+public class TeamDepthChart implements Serializable {
     Map<Position, List<Player>> fullDepthChart;
 
     TeamDepthChart(List<Player> roster){
@@ -22,12 +24,13 @@ public class TeamDepthChart {
 
     private Map<Position, List<Player>> setupDepthChart(List<Player> roster){
         Map<Position, List<Player>> completeDepthChart = new HashMap<>();
+        completeDepthChart.put(Position.QB, new ArrayList<>());
 
         for(Player player : roster){
             Position position = player.getPlayerPosition();
-            List<Player> positionDepthChart = fullDepthChart.get(position);
+            List<Player> positionDepthChart = completeDepthChart.get(position)==null ? new ArrayList<>() : completeDepthChart.get(position);
             addPlayerBasedOnOverallRating(player, positionDepthChart);
-            fullDepthChart.replace(player.getPlayerPosition(), positionDepthChart);
+            completeDepthChart.replace(player.getPlayerPosition(), positionDepthChart);
         }
         return completeDepthChart;
     }
