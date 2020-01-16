@@ -13,6 +13,11 @@ public class TeamRoster {
     private List<Player> roster;
     private TeamDepthChart depthChart;
 
+    public TeamRoster(List<Player> roster){
+        this.roster = roster;
+        depthChart = new TeamDepthChart(roster);
+    }
+
     public TeamRoster(){
         roster = new ArrayList<>();
         depthChart = new TeamDepthChart(roster);

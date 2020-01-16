@@ -24,6 +24,4 @@ public class PlayerGenerationController {
         String res = ControllerUtils.DefaultObjectToJsonString(player.getPlayerGeneralInfo());
         return new ResponseEntity<>(res, HttpStatus.CREATED);
     }
-
-
 }

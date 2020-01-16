@@ -4,6 +4,7 @@ public class TeamStats {
     private double capHit;
 
     public TeamStats(){
+        capHit = NFLLeague.TEAM_SALARY_CAP;
 
     }
 
