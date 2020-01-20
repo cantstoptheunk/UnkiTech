@@ -9,7 +9,7 @@ import java.util.List;
 
 abstract public class AbstractPlayerFactory {
 
-    public static final String firstNameFilePath = "/Users/cantstoptheunk/downloads/demo/src/main/resources/firstname.txt";
+    public static final String firstNameFilePath = "/Users/cantstoptheunk/downloads/omega/src/main/resources/firstname.txt";
     public static List<String> firstNames;
 
     static {
@@ -21,7 +21,7 @@ abstract public class AbstractPlayerFactory {
         }
     }
 
-    public static final String lastNameFilePath = "/Users/cantstoptheunk/downloads/demo/src/main/resources/lastname.txt";
+    public static final String lastNameFilePath = "/Users/cantstoptheunk/downloads/omega/src/main/resources/lastname.txt";
     public static List<String> lastNames;
 
     static {
@@ -33,7 +33,7 @@ abstract public class AbstractPlayerFactory {
         }
     }
 
-    public static final String collegeFilePath = "/Users/cantstoptheunk/downloads/demo/src/main/resources/colleges.txt";
+    public static final String collegeFilePath = "/Users/cantstoptheunk/downloads/omega/src/main/resources/colleges.txt";
     public static List<String> colleges;
 
     static {

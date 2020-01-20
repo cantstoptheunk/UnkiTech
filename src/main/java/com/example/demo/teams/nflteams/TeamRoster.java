@@ -2,7 +2,6 @@ package com.example.demo.teams.nflteams;
 
 import com.example.demo.generic.CategoryType;
 import com.example.demo.people.player.Player;
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
 import java.util.ArrayList;
 import java.util.Collections;

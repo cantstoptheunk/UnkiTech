@@ -1,5 +1,7 @@
 package com.example.demo.generic;
 
+import com.example.demo.people.player.Position;
+
 public class Category {
 
 
@@ -9,6 +11,7 @@ public class Category {
     private double value;
     private boolean hasMaximumOf100 = true;
     private boolean hasMinimumOf0 = true;
+    private Position position;
 
     public Category (String name, CategoryType type) {
         this.name = name;
@@ -41,6 +44,12 @@ public class Category {
         this.value = value;
     }
 
+    public Category (String name, CategoryType type, Position pos) {
+        this.name = name;
+        this.type = type;
+        this.position = pos;
+    }
+
     /** Setters **/
     public void setName(String name){ this.name = name;}
     public void setValue(double value){this.value = value;}
@@ -52,6 +61,7 @@ public class Category {
     /** Getters **/
     public String getName() {return name;}
     public double getValue() {return value;}
+    public Position getValue() {return position;}
     public String getDescription(){return description;}
     public boolean hasMaximumOf100(){ return hasMaximumOf100;}
     public boolean hasMinimumOf0(){return hasMinimumOf0;}

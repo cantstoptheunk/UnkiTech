@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.example.demo.generic.CategoryType.TYPE_PLAYING_STATS;
-import static com.example.demo.people.stats.StatConstants.*;
 
 public class PlayingStats {
     /* Stats for a QB */
@@ -26,17 +25,17 @@ public class PlayingStats {
     public PlayingStats(){
         playingStatsForPlayers = new HashMap<>();
         /* QB Stats */
-        playingStatsForPlayers.put(PASSING_YARDS, new Category(PASSING_YARDS, TYPE_PLAYING_STATS, false, false));
-        playingStatsForPlayers.put(TOUCHDOWNS, new Category(TOUCHDOWNS, TYPE_PLAYING_STATS, false, true));
-        playingStatsForPlayers.put(YPA, new Category(PASSING_YARDS, TYPE_PLAYING_STATS, false, false));
-        playingStatsForPlayers.put(PASS_ATTEMPTS, new Category(PASSING_YARDS, TYPE_PLAYING_STATS, false, true));
-        playingStatsForPlayers.put(PASS_COMPLETED, new Category(PASSING_YARDS, TYPE_PLAYING_STATS, false, true));
+        playingStatsForPlayers.put(StatConstants.PASSING_YARDS, new Category(StatConstants.PASSING_YARDS, TYPE_PLAYING_STATS, false, false));
+        playingStatsForPlayers.put(StatConstants.TOUCHDOWNS, new Category(StatConstants.TOUCHDOWNS, TYPE_PLAYING_STATS, false, true));
+        playingStatsForPlayers.put(StatConstants.YPA, new Category(StatConstants.PASSING_YARDS, TYPE_PLAYING_STATS, false, false));
+        playingStatsForPlayers.put(StatConstants.PASS_ATTEMPTS, new Category(StatConstants.PASSING_YARDS, TYPE_PLAYING_STATS, false, true));
+        playingStatsForPlayers.put(StatConstants.PASS_COMPLETED, new Category(StatConstants.PASSING_YARDS, TYPE_PLAYING_STATS, false, true));
 
         /* Defense Stats */
-        playingStatsForPlayers.put(SACKS, new Category(SACKS, TYPE_PLAYING_STATS, false, false));
-        playingStatsForPlayers.put(TACKLES, new Category(TACKLES, TYPE_PLAYING_STATS, false, false));
-        playingStatsForPlayers.put(INTERCEPTIONS, new Category(INTERCEPTIONS, TYPE_PLAYING_STATS, false, false));
-        playingStatsForPlayers.put(DEFLECTIONS, new Category(DEFLECTIONS, TYPE_PLAYING_STATS, false, false));
+        playingStatsForPlayers.put(StatConstants.SACKS, new Category(StatConstants.SACKS, TYPE_PLAYING_STATS, false, false));
+        playingStatsForPlayers.put(StatConstants.TACKLES, new Category(StatConstants.TACKLES, TYPE_PLAYING_STATS, false, false));
+        playingStatsForPlayers.put(StatConstants.INTERCEPTIONS, new Category(StatConstants.INTERCEPTIONS, TYPE_PLAYING_STATS, false, false));
+        playingStatsForPlayers.put(StatConstants.DEFLECTIONS, new Category(StatConstants.DEFLECTIONS, TYPE_PLAYING_STATS, false, false));
     }
 
     /* Getters */
