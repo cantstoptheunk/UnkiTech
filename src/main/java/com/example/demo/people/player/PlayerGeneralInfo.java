@@ -7,25 +7,25 @@ import static com.example.demo.people.player.GeneralInfoConstants.POSITION;
 
 public class PlayerGeneralInfo {
 
-    private Category firstName, lastName, college;
-    private Category age;
-    private final Category position;
+    private String firstName, lastName, college;
+    private int age;
+    private final Position position;
 
     public PlayerGeneralInfo(Position pos){
-        position = new Category(POSITION, TYPE_GENERAL_INFO);
+        position = pos;
     }
 
     /* Getters */
-    public Category getFirstName(){ return firstName;}
-    public Category getLastName(){ return lastName;}
-    public Category getCollege(){ return college;}
-    public Category getAge(){return age;}
-    public Category getPosition(){return position;}
+    public String getFirstName(){ return firstName;}
+    public String getLastName(){ return lastName;}
+    public String getCollege(){ return college;}
+    public int getAge(){return age;}
+    public Position getPosition(){return position;}
 
     /* Setters */
-    public void setFirstName(Category name){firstName = name;}
-    public void setLastName(Category name){lastName = name;}
-    public void setCollege(Category name){college = name;}
-    public void setAge(Category num){age = num;}
+    public void setFirstName(String name){firstName = name;}
+    public void setLastName(String name){lastName = name;}
+    public void setCollege(String name){college = name;}
+    public void setAge(int num){age = num;}
 
 }
