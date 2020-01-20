@@ -38,7 +38,7 @@ public class TeamDepthChart implements Serializable {
     private void addPlayerBasedOnOverallRating(Player playerToAdd, List<Player> positionDepthChart){
         for(int i=0; i<positionDepthChart.size(); i++){
             Player player = positionDepthChart.get(i);
-            if(playerToAdd.getAttribute(OVERALL).getValue() > player.getAttribute(OVERALL).getValue()){
+            if((double)playerToAdd.getAttribute(OVERALL).getValue() > (double)player.getAttribute(OVERALL).getValue()){
                 positionDepthChart.add(i, playerToAdd);
                 return;
             }

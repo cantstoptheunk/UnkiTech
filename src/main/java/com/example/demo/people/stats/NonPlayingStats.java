@@ -1,6 +1,8 @@
 package com.example.demo.people.stats;
 
 import com.example.demo.generic.Category;
+import com.example.demo.generic.CategoryDbl;
+import com.example.demo.generic.CategoryInt;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,11 +27,11 @@ public class NonPlayingStats {
 
     public NonPlayingStats(){
         nonPlayingStatsForPlayers = new HashMap<>();
-        nonPlayingStatsForPlayers.put(CAP_HIT, new Category(CAP_HIT, TYPE_NON_PLAYING_STATS, false, true));
-        nonPlayingStatsForPlayers.put(TERM, new Category(TOUCHDOWNS, TYPE_NON_PLAYING_STATS, false, true));
-        nonPlayingStatsForPlayers.put(GUARANTEE, new Category(GUARANTEE, TYPE_NON_PLAYING_STATS, false, true));
-        nonPlayingStatsForPlayers.put(BONUS, new Category(BONUS, TYPE_NON_PLAYING_STATS, false, true));
-        nonPlayingStatsForPlayers.put(SALARY, new Category(SALARY, TYPE_NON_PLAYING_STATS, false, true));
+        nonPlayingStatsForPlayers.put(CAP_HIT, new CategoryDbl(CAP_HIT, TYPE_NON_PLAYING_STATS, false, true));
+        nonPlayingStatsForPlayers.put(TERM, new CategoryInt(TOUCHDOWNS, TYPE_NON_PLAYING_STATS, false, true));
+        nonPlayingStatsForPlayers.put(GUARANTEE, new CategoryDbl(GUARANTEE, TYPE_NON_PLAYING_STATS, false, true));
+        nonPlayingStatsForPlayers.put(BONUS, new CategoryDbl(BONUS, TYPE_NON_PLAYING_STATS, false, true));
+        nonPlayingStatsForPlayers.put(SALARY, new CategoryDbl(SALARY, TYPE_NON_PLAYING_STATS, false, true));
     }
 
     /* Getters */
